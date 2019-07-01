@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: white;
+            grid-row-gap: 10px;
+            grid-column-gap: 30px;
+            width: 75%;
+            float: left;
+            margin-top: 1%;
+        }
+
+        .grid-container>div {
+            background-color: white;
+            text-align: center;
+        }
+
+        .vertical-menu {
+            background-color: lightgray;
+            border: 1px;
+            border-radius: 15px;
+            width: 15%;
+            float: left;
+            margin-right: 1%;
+            height: 100%;
+        }
+
+        .div2 {
+            background-color: lightgray;
+            width: 75%;
+            text-align: left;
+            float: left;
+            height: 30%;
+        }
+
+        .div2>p {
+            margin-left: 70px;
+            margin-top: 70px;
+        }
+
+        .div2>h1 {
+            margin-left: 70px;
+            margin-top: 70px;
+        }
+
+        .vertical-menu a {
+            background-color: lightgray;
+            color: blue;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .vertical-menu b {
+            background-color: lightgray;
+            color: grey;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .vertical-menu a:hover {
+            background-color: lightgray;
+        }
+
+        .vertical-menu a.active {
+            background-color: royalblue;
+            color: white;
+        }
+
+        .botao {
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            width: 150px;
+            height: 40px;
+        }
+
+        .botao2 {
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            width: 100px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vertical-menu">
+        <b>Sidebar</b>
+        <a href="#" class="active"> Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a>
+            <b>Sidebar</b>
+        </a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a>
+            <b>Sidebar</b>
+        </a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </div>
+    <div class="div2">
+        <h1>Lorem Ipsum</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies accumsan urna in venenatis. In facilisis
+            interdum posuere. Morbi eu sapien elementum, mollis massa non, sodales lectus. Phasellus hendrerit vulputate
+            urna, ac tempus ante finibus eget. Sed luctus, neque facilisis iaculis vehicula, tellus massa condimentum ipsum,
+            nec tincidunt odio quam vitae dui. Nulla commodo tellus augue, sed sollicitudin nulla suscipit ut. Suspendisse
+            nec pretium enim. Cras rhoncus erat vel tellus placerat convallis. Maecenas elementum, mi in fermentum scelerisque,
+            lacus sem fermentum velit, eget egestas est justo at lacus. Mauris quis consequat risus, in sodales mauris. Nam
+            at risus a nulla tristique elementum quis in lacus. Donec lobortis, purus at sollicitudin vehicula, ligula arcu
+            interdum metus, in suscipit turpis urna ut felis. Curabitur ornare, tellus nec cursus sagittis, arcu nisl ullamcorper
+            ipsum, ut vulputate nisl est sed quam. Nunc rutrum nunc in justo cursus rutrum..
+            <br>
+            <button class="botao"> OK </button>
+        </p>
+    </div>
+    <div class="grid-container">
+        <div class="grid-1">
+            <h2>Heading</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nisi. Morbi rhoncus mattis tortor. Praesent pharetra
+            a purus sollicitudin congue. Praesent ornare pharetra massa ut consequat. Pellentesque elementum porttitor fringilla.
+            Etiam volutpat justo ac orci sollicitudin, sit amet porttitor risus mattis. Sed sagittis suscipit lacinia. Suspendisse
+            convallis, augue in pretium ultrices, purus ligula porta magna, eu sagittis quam lacus in odio. Aliquam erat
+            volutpat. Morbi eu orci eget mauris tristique dictum eget eu ipsum.
+            <br>
+            <button class="botao2"> OK </button>
+        </div>
+        <div class="grid-2">
+            <h2>Heading</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nisi. Morbi rhoncus mattis tortor. Praesent pharetra
+            a purus sollicitudin congue. Praesent ornare pharetra massa ut consequat. Pellentesque elementum porttitor fringilla.
+            Etiam volutpat justo ac orci sollicitudin, sit amet porttitor risus mattis. Sed sagittis suscipit lacinia. Suspendisse
+            convallis, augue in pretium ultrices, purus ligula porta magna, eu sagittis quam lacus in odio. Aliquam erat
+            volutpat. Morbi eu orci eget mauris tristique dictum eget eu ipsum.
+            <br>
+            <button class="botao2"> OK </button>
+        </div>
+        <div class="grid-3">
+            <h2>Heading</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nisi. Morbi rhoncus mattis tortor. Praesent pharetra
+            a purus sollicitudin congue. Praesent ornare pharetra massa ut consequat. Pellentesque elementum porttitor fringilla.
+            Etiam volutpat justo ac orci sollicitudin, sit amet porttitor risus mattis. Sed sagittis suscipit lacinia. Suspendisse
+            convallis, augue in pretium ultrices, purus ligula porta magna, eu sagittis quam lacus in odio. Aliquam erat
+            volutpat. Morbi eu orci eget mauris tristique dictum eget eu ipsum.
+            <br>
+            <button class="botao2"> OK </button>
+        </div>
+        <div class="grid-4">
+            <h2>Heading</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nisi. Morbi rhoncus mattis tortor. Praesent pharetra
+            a purus sollicitudin congue. Praesent ornare pharetra massa ut consequat. Pellentesque elementum porttitor fringilla.
+            Etiam volutpat justo ac orci sollicitudin, sit amet porttitor risus mattis. Sed sagittis suscipit lacinia. Suspendisse
+            convallis, augue in pretium ultrices, purus ligula porta magna, eu sagittis quam lacus in odio. Aliquam erat
+            volutpat. Morbi eu orci eget mauris tristique dictum eget eu ipsum.
+            <button class="botao2"> OK </button>
+        </div>
+
+        <div class="grid-5">
+            <h2>Heading</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nisi. Morbi rhoncus mattis tortor. Praesent pharetra
+            a purus sollicitudin congue. Praesent ornare pharetra massa ut consequat. Pellentesque elementum porttitor fringilla.
+            Etiam volutpat justo ac orci sollicitudin, sit amet porttitor risus mattis. Sed sagittis suscipit lacinia. Suspendisse
+            convallis, augue in pretium ultrices, purus ligula porta magna, eu sagittis quam lacus in odio. Aliquam erat
+            volutpat. Morbi eu orci eget mauris tristique dictum eget eu ipsum.
+            <button class="botao2"> OK </button>
+        </div>
+
+        <div class="grid-6">
+            <h2>Heading</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nisi. Morbi rhoncus mattis tortor. Praesent pharetra
+            a purus sollicitudin congue. Praesent ornare pharetra massa ut consequat. Pellentesque elementum porttitor fringilla.
+            Etiam volutpat justo ac orci sollicitudin, sit amet porttitor risus mattis. Sed sagittis suscipit lacinia. Suspendisse
+            convallis, augue in pretium ultrices, purus ligula porta magna, eu sagittis quam lacus in odio. Aliquam erat
+            volutpat. Morbi eu orci eget mauris tristique dictum eget eu ipsum.
+            <button class="botao2"> OK </button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

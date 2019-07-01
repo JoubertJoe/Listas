@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercicio 2</title>
+    <meta charset="utf-8">
+    <style>
+        li.um {
+            list-style-type: disc;
+        }
+
+        li.dois {
+            list-style-type: decimal;
+        }
+
+        li.tres {
+            list-style-type: circle;
+        }
+
+        li.qutro {
+            list-style-type: lower-roman;
+        }
+
+        table {
+            margin: 20px;
+            width: 400px;
+        }
+
+        table,
+        td,
+        th {
+            /*dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden*/
+            border: 1px groove black;
+            /*border-style: dotted dashed solid;*/
+        }
+
+        td {
+            padding: 5px;
+            text-align: left
+        }
+
+        tr:nth-child(even) {
+            /*pode-se ussar even ou odd para colorir as linha impares ou pares apenas. ou passar o número apenas da linha q vae ser aplicado o efeito*/
+
+        }
+
+        .cidades {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h4><i>Suldeste x Sul</i></h4>
+        <table>
+            <tr>
+                <div align="center">
+                    <th colspan="2">Estados</td>
+                    <th> Cidades</th>
+                </div>
+            </tr>
+            <tr>
+                <td rowspan="4">Sudeste</td>
+                <td>São Paulo</td>
+                <td class="cidades">
+                    <ol>
+                        <li class="um">
+                            <p>São Paulo</p>
+                        </li>
+                        <li class="um">
+                            <p>Guarulhos</p>
+                        </li>
+                        <li class="um">
+                            <p>Campinas</p>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="cidades">
+                    <ol>
+                        <li class="dois">
+                            <p>Rio de Janeiro</p>
+                        </li>
+                        <li class="dois">
+                            <p>São Gonçalos</p>
+                        </li>
+                        <li class="dois">
+                            <p>Duque de Caixias</p>
+                        </li>
+                    </ol>
+                </td>
+            <tr>
+                <td class="cidades">Minas Gerais</td>
+                <td class="cidades">
+                    <ol>
+                        <li class="tres">
+                            <p>Belo Horizonte</p>
+                        </li>
+                        <li class="tres">
+                            <p>Uberlândia</p>
+                        </li>
+                        <li class="tres">
+                            <p>Cotagem</p>
+                        </li>
+                    </ol>
+                </td>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>
+                    <ol>
+                        <li class="quatro">
+                            <p>Vila Velha</p>
+                        </li>
+                        <li class="quatro">
+                            <p>Serra</p>
+                        </li>
+                        <li class="quatro">
+                            <p>Cariacica</p>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">Sul</td>
+                <td>Rio Grande do Sul</td>
+                <td class="cidades">
+                    <ol>
+                        <li class="um">
+                            <p>Porto Alegre</p>
+                        </li>
+                        <li class="um">
+                            <p>Caxias do Sul</p>
+                        </li>
+                        <li class="um">
+                            <p>Pelotas</p>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="cidades">
+                    <ol>
+                        <li class="dois">
+                            <p>Curitiba</p>
+                        </li>
+                        <li class="dois">
+                            <p>Londrina</p>
+                        </li>
+                        <li class="dois">
+                            <p>Maringá</p>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="cidades">
+                    <ol>
+                        <li class="tres">
+                            <p>Joinville</p>
+                        </li>
+                        <li class="tres">
+                            <p>Florianópolis</p>
+                        </li>
+                        <li class="tres">
+                            <p>Blumenau</p>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

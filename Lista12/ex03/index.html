@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <script src="myScript.js"></script>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px groove black;
+            border-collapse: collapse;
+            margin: auto;
+            /* Centraliza sua tabela */
+            width: 80%;
+        }
+
+        td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            /*pode-se ussar even ou odd para colorir as linha impares ou pares apenas. ou passar o número apenas da linha q vae ser aplicado o efeito*/
+            background-color: #99CCFF;
+        }
+
+        body {
+            background-color: #6699FF;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="tabela">
+
+        <th style="background-color: #6666CC">TO DO LIST</th>
+        <tr>
+            <td><input type="text" id="inp1" placeholder="Adcionar Tarefa..." style="background-color: lightgray">
+                <button onclick="inserirLista()"> <i class="fas fa-plus-circle"></i></button></td>
+        </tr>
+    </table>
+</body>
+
+</html>

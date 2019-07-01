@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <style>
+            input[type="text"]
+{
+                font-family: "Font Awesome 5 Free";
+                font-size: 25px;
+                border-radius: 5px;
+}        
+
+input[type="text"]:hover
+{
+                 box-shadow: -2px -2px -2px #1A89D8;
+                -webkit-box-shadow: 1px 1px 1px #1A89D8 , 1px -1px 1px #1A89D8 ,-1px 1px 1px #1A89D8 ;
+              
+                -moz-box-shadow: 5px 5px 5px #1A89D8;
+                 border-color: #1A89D8; 
+}  
+            .grid-container{             
+                display: grid;
+                grid-template-columns: repeat(7,auto);
+                background-color:white;
+                grid-row-gap: 5px;
+                grid-column-gap : 5px;
+            }
+            .grid-container>div{
+
+            }
+            .grid-item-1{
+                grid-column-start: 4;
+                grid-column-end: 5;                
+                /* border: 0.1px solid; */
+                font-size: 25px;
+                padding: 20px;
+                
+                
+            }
+
+            .botao{
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 22px;
+                background-color: white;
+            }
+           
+           .botao:hover{
+               background-color: #1A89D8;
+               color:white;
+               border-color: #1A89D8;
+           }
+           fieldset{
+            text-align: right;
+            border:none;
+           }
+
+        </style>
+    </head>
+    <div class="grid-container">
+        <div class="grid-item-1">
+
+            <form action="" method="GET">
+                <p></p>
+                
+                <h1 style="color:#2A2B2B">Address Details</h1>
+               
+                <label for="address1" style="text-align: right; padding-right: 16px ;width:15%" >Line 1</label>
+                <input type="text" name="address1" id="address1" placeholder="Address Line 1" style="width:87% ;">
+                <p></p>
+                <label for="address2" style="text-align: left;padding-right: 16px">Line 2</label>
+                <input type="text" name="address2" id="address2" placeholder="Address Line 2" style="width:87%">
+                <p></p>
+                <label for="city" style="text-align: left ; padding-right: 36px">City</label>
+                <input type="text" style="width:87%" name="city" id="city" placeholder="City ">
+                <p></p>
+                <label for="state" style="text-align: left; padding-right: 29px; ">State</label>
+                <input type="text" name="state" id="state" placeholder="State" style="width:35%">
+
+                <label for="postcode" style="text-align: left">Postcode</label>
+                <input type="text" name="postcode" id="postcode" style="width:38%" > 
+                <p></p>
+                <label for="Contry" style="width:15%">Country</label>
+                <input type="text" name="Contry" id="Contry" style="width:87%">
+                <P></P>
+                <fieldset >
+                <button class="botao">Cancel</button>
+                <input type="submit" name="enviar" id="enviar" value="Save" class="botao">
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+
+    <body>
+
+    </body>
+</html>

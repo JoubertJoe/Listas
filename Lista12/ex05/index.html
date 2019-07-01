@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <script src="script05.js"></script>
+    <style>
+        body{
+            text-align: center;
+            background-color: lightblue;
+        }
+        div.principal{
+            background:url("cracha1.png") no-repeat;
+            background-color: darkblue;
+            width: 300px;
+            margin: auto;
+            border-radius: 30px;
+            height: 450px;
+            padding-top: 30px;
+            vertical-align:middle;
+        }
+
+        div.espaco1{
+            padding-top: 10px;
+            background-color: white;
+            width: 50px;
+            margin: auto;
+            border-radius: 20px;
+            height: 15px;
+        }
+        div.espaco2{
+            background-color: white;
+            width: 50px;
+            margin: auto;
+            border-radius: 20px;
+            height: 10px;
+        }
+        div.logo{
+            background-color: white;
+            width: 75px;
+            height: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        div.nome_empresa{
+            background-color: white;
+            width: 250px;
+            height: 28px;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        div.foto{
+            background-color: red;
+            width: 140px;
+            height: 172px;
+            margin: auto;
+            text-align: center;
+            background:url("foto.jpg") no-repeat;
+    
+        }
+        div.nome{
+            background-color: none;
+            width: 300px;
+            height: 35px;
+            margin: auto;
+            text-align: center;
+            float: none;
+            padding-top: 30px;
+        }
+        div.cargo{
+            background-color: none;
+            width: 250px;
+            height: 35px;
+            margin: auto;
+            text-align: center;
+            float: none;
+        }
+        input#inp_logo, button#btn_logo, input#inp_empresa, button#btn_empresa, input#inp_nome, button#btn_nome, input#inp_funcao, button, #btn_funcao, input#inp_foto, button#btn_foto{
+            display: none;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <p id="p1">Selecione alguns dos campos para editar</p>
+    <div class="principal">
+        <div class="espaco1"></div>
+        <div class="logo" id="fundoLogo"><h3 onclick="alterar_logo()" id="logo">SUA LOGO</h3><input id="inp_logo"><button id="btn_logo" onclick="alterar_logo1()">OK</button></div>
+        <div class="espaco2"></div>
+        <div class="nome_empresa"><h2 id="empresa" onclick="alterar_empresa()">Nome da Empresa</h2><input id="inp_empresa"><button id="btn_empresa" onclick="alterar_empresa1()">OK</button></div>
+        <div class="foto" id="foto" onclick="alterar_foto()"><input id="inp_foto"><button id="btn_foto" onclick="alterar_foto()">CONFIRMAR</button></div>
+        <div class="nome"><h2 id="nome" onclick="alterar_nome()">NOME</h2><input id="inp_nome"><button id="btn_nome" onclick="alterar_nome1()">OK</button></div>
+        <div class="cargo"><h2 id="funcao" onclick="alterar_cargo()">Função</h2><input id="inp_funcao"><button id="btn_funcao" onclick="alterar_cargo1()">OK</button></div>
+    </div>
+</body>
+</html>

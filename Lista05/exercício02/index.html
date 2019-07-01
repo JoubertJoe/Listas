@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <style>
+        input[type="text"]{
+                font-family:"Font Awesome 5 Free";
+                font-size: 20px;
+                border: 0.5px light;
+               
+        }
+        
+       
+        .grid-container {
+            display: grid;
+            grid-template-columns:repeat(7,auto);  
+            background-color: white;
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            /* grid-template-rows: auto; */
+        }
+        
+
+        .grid-container>div {
+           
+        }
+
+        .grid-item-1 {
+            min-height: 450px;
+            min-width: 150px;
+              
+             grid-column-start: 4;
+            grid-column-end: 5;
+            border: 3px solid;
+            border-color: #802FDE;
+            background-color: white;
+            padding: 0px;
+            padding-left: 1px;
+            color: #BEBABA;
+            text-align: left;
+            /* border-radius: 15px; */
+            align-items: center;
+            text-align: center;
+        
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        fieldset {
+            margin-left: 0;
+            margin-right: 0;
+            border: 0px solid;
+            text-align: center;
+            align-content: center;
+            background:url("fundo.jpg");
+        }
+        .botao{
+         
+            font-size: 12px;
+            background: #802FDE;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            border-radius: 15px;
+            height: 35px;
+            width: 150px;
+            box-shadow: 5px 5px 5px #D3BAF1;
+            -webkit-box-shadow: 5px 5px 5px #D3BAF1;
+            -moz-box-shadow: 5px 5px 5px #D3BAF1;
+
+
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item-1">
+  
+            <form action="" method="GET" style="align-content: center">  
+               
+                <fieldset>
+                <h1 style="color:white">CONTACT US</h1>
+                
+                </fieldset>
+                    <p></p>
+                <label for="nome"></label>
+                <input type="text" name="nome" id="nome" placeholder="&#xf2bb Full name" style="width:80%" >
+                <p></p>
+                <label for="email"></label>
+                <input type="text" name="email" placeholder="&#xf0e0 example@gmail.com" id="email" style="width:80%">
+                <p></p>
+                <label for="telefone"></label>
+                <input type="text" name="telefone" placeholder="&#xf36b  Eg 1 8000 000 0000" id="telefone" style="width:80%">
+                <p></p>
+                <label for="comentario"></label> 
+                <textarea name="textArea" rows="8" placeholder="&#xf075" name="textArea" id="txt1" style="width:80% ; font-size:25px"></textarea>
+                <p></p>
+                
+
+                <input type="submit" name="enviar" id="enviar" value="SEND NOW" class="botao">
+                <p></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</HTML>
+
+<!-- placeholder="&#xf0e0;" -->

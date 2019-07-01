@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #container {
+
+            margin: 0 auto;
+            background-color: rgb(75, 153, 177);
+
+
+        }
+
+        .slider {
+            height: 25px;
+            width: 60%;
+            background: #d3d3d3;
+            outline: none;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+
+        #layoutCima {
+            margin: 10px auto;
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            background-color: grey;
+        }
+
+        #area {
+            margin-top: 37px;
+            width: 280px;
+            height: 220px;
+            resize: none;
+        }
+
+        #layoutBaixo {
+            margin: 0 auto;
+            width: 300px;
+
+        }
+
+        .pB {
+
+            display: block;
+            margin-top: 2px;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            float: right;
+            margin-right: 30px;
+        }
+    </style>
+    <script type="text/javascript" src="myscript.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <br>
+        <div id="layoutCima">
+            <textarea id="area" disabled="disabled"></textarea>
+        </div>
+
+        <div id="layoutBaixo">
+            <fieldset style="color: white; background-color: rgb(85, 82, 126)">
+                <p>Top Left:</p>
+                <input onchange="atualizaTopLeft()" type="range" min="0" max="100" value="0" class="slider"
+                    id="slider1">
+                <p id="TopLeft" class="pB"></p>
+                <p>Top Right:</p>
+                <input onchange="atualizaTopRight()" type="range" min="0" max="100" value="0" class="slider"
+                    id="slider2">
+                <p id="TopRight" class="pB"></p>
+                <p>Bot Right:</p>
+                <input onchange="atualizaBotRight()" type="range" min="0" max="100" value="0" class="slider"
+                    id="slider3">
+                <p id="BotRight" class="pB"></p>
+                <p>Bot Left:</p>
+                <input onchange="atualizaBotLeft()" type="range" min="0" max="100" value="0" class="slider"
+                    id="slider4">
+                <p id="BotLeft" class="pB"></p>
+            </fieldset>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+</html>

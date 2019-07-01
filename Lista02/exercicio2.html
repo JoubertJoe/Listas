@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 02</title>
+        <meta charset="utf-8">
+        <style>
+            table{
+                margin: 20px;
+                width: 400px;
+            }
+            table, td, th{
+                /*dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden*/
+                border: 1px groove black;
+                /*border-style: dotted dashed solid;*/
+            }
+            td{
+                padding: 5px;
+                text-align: left
+                
+            }
+            tr:nth-child(even){/*pode-se ussar even ou odd para colorir as linha impares ou pares apenas. ou passar o número apenas da linha q vae ser aplicado o efeito*/
+
+            }
+            .cidades{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <div align = "center">        
+        <h4><i>Suldeste x Sul</i></h4>
+        <table>
+            <tr>
+                <div align = "center">
+                    <th colspan="2">Estados</td>
+                    <th> Cidades</th>
+                </div>
+            </tr>
+            <tr>
+                <td rowspan="12">Sudeste</td>
+                <td rowspan="3">São Paulo</td>
+                <i>
+                <td class="cidades">São Paulo</td>
+            </tr>
+            <tr>
+                <td class="cidades">Guarulhos</td>
+            </tr>
+            <tr>
+                <td class="cidades">Campinas</td>
+            </i>
+            </tr>
+            <tr>
+                <td rowspan="3">Rio de Janeiro</td>
+                <i><td class="cidades">Rio de Janeiro</td>
+            </tr>
+            <tr>
+                <td class="cidades">São Gonçalos</td>
+            </tr>
+            <tr>
+                <td class="cidades">Duque de Caixias</td></i>
+            </tr>
+            <tr>
+                <td rowspan="3">Minas Gerais</td>
+                <i><td class="cidades">Belo Horizonte</td>
+            </tr>
+            <tr>
+                <td class="cidades">Uberlandia</td>
+            </tr>
+            <tr>
+                <td class="cidades">Contagem</td></i>
+            </tr>
+            <tr>
+                <td rowspan="3">Espirito Santo</td>
+                <i><td class="cidades">Vila velha</td>
+            </tr>
+            <tr>
+                <td class="cidades">Serra</td>
+            </tr>
+            <tr>
+                <td class="cidades">Cariaçica</td><i>
+            </tr>
+
+            
+            <tr>
+                <td rowspan="9">Sul</td>
+                <td rowspan="3">Rio Grande do Sul</td>
+                <i><td class="cidades">Porto Alegre</td>
+            </tr>
+            <tr>
+                <td class="cidades">Caxias do SUl</td>
+            </tr>
+            <tr>
+                <td class="cidades">Pelotas</td></i>
+            </tr>
+            <tr>
+                <td rowspan="3">Paraná</td>
+                <td class="cidades">Curitiba</td>
+            </tr>
+            <tr>        
+                <td class="cidades">Londrina</td>
+            </tr>
+            <tr>
+                <td class="cidades">Maringá</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Santa Catarina</td>
+                <td class="cidades">Joinvile</td>
+            </tr>
+            <tr>
+                <td class="cidades">Florianopolis</td>
+            </tr>
+            <tr>
+                <td class="cidades">Blumenau</td>
+            </tr>         
+        </table>
+    </div>
+    </body>
